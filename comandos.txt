@@ -9,6 +9,11 @@ git log --oneline ==> Lo muestra todo en la misma linea
 git log <codigo commit> ==> Muestra mas detalles del commit
 git push ==> Lo sube al repositorio remoto
 git restore <file> | . ==> Restaura el archivo hasta el ultimo commit
+git restore --staged <file> ==> Lo saca del stage
+git revert <codigo de commit> ==> Vuelve a antes de ese commit, es decir, revierte el commit
+git show <commit code> ==> Muestra los cambios del commit
+gitk ==> Muestra un HUD de git
+
 
 Configurar Git
 git config --global user.name <nombre> ==> cambiamos el nombre name de todos el dispositivo
