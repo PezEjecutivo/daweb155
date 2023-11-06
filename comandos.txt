@@ -8,6 +8,7 @@ git diff ==> Muestra las diferencias del archivo
 git log --oneline ==> Lo muestra todo en la misma linea
 git log <codigo commit> ==> Muestra mas detalles del commit
 git push ==> Lo sube al repositorio remoto
+git restore <file> | . ==> Restaura el archivo hasta el ultimo commit
 
 Configurar Git
 git config --global user.name <nombre> ==> cambiamos el nombre name de todos el dispositivo
