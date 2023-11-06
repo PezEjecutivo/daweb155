@@ -1,0 +1,2 @@
+Git ini ==> Crea un repositorio de codigo local
+Git add <file> ==> Añade ese archivo al control de versiones
