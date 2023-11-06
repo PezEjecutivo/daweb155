@@ -21,6 +21,8 @@ git checkout <nombre-rama> ==> cambiar a la rama <nombre-rama>
 git merge <nombre-rama> ==> Une la rama, con la rama actual
 git checkout -b <nombre-rama> ==> crea la rama <nombre-rama> y nos mueve a ella
 
+
+
 Configurar Git
 git config --global user.name <nombre> ==> cambiamos el nombre name de todos el dispositivo
 git config --global user.email <email> ==> cambiamos el email de todos el dispositivo
