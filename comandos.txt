@@ -13,7 +13,13 @@ git restore --staged <file> ==> Lo saca del stage
 git revert <codigo de commit> ==> Vuelve a antes de ese commit, es decir, revierte el commit
 git show <commit code> ==> Muestra los cambios del commit
 gitk ==> Muestra un HUD de git
-
+git branch <nombre> ==> Crea una rama 
+git branch -r ==> Muestra todas las ramas remotas
+git branch -a ==> Muestra todas las ramas y en la que estas
+git branch -d <nombre-rama> ==> Elimina la rama
+git checkout <nombre-rama> ==> cambiar a la rama <nombre-rama>
+git merge <nombre-rama> ==> Une la rama, con la rama actual
+git checkout -b <nombre-rama> ==> crea la rama <nombre-rama> y nos mueve a ella
 
 Configurar Git
 git config --global user.name <nombre> ==> cambiamos el nombre name de todos el dispositivo
