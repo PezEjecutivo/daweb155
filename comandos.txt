@@ -1,8 +1,14 @@
-Git init ==> Crea un repositorio de codigo local
-Git add <file> | . ==> Añade ese archivo al control de versiones (. añade todo los del directorio | * añade todos)
-Git commit -m <mensaje> ==> Subo un cambio con un mensaje
-Git status ==> me muestra el estado en el que esta el repositorio
-Git log ==> Muestra los commits realizados y su mensaje asociado (Persona, email, fecha)
-Git diff ==> Muestra las diferencias del archivo
-Git log --oneline ==> Lo muestra todo en la misma linea
-Git log <codigo commit> ==> Muestra mas detalles del commit
+Comando Git
+git init ==> Crea un repositorio de codigo local
+git add <file> | . ==> Añade ese archivo al control de versiones (. añade todo los del directorio | * añade todos)
+git commit -m <mensaje> ==> Subo un cambio con un mensaje
+git status ==> me muestra el estado en el que esta el repositorio
+git log ==> Muestra los commits realizados y su mensaje asociado (Persona, email, fecha)
+git diff ==> Muestra las diferencias del archivo
+git log --oneline ==> Lo muestra todo en la misma linea
+git log <codigo commit> ==> Muestra mas detalles del commit
+git push ==> Lo sube al repositorio remoto
+
+Configurar Git
+git config --global user.name <nombre> ==> cambiamos el nombre name de todos el dispositivo
+git config --global user.email <email> ==> cambiamos el email de todos el dispositivo
