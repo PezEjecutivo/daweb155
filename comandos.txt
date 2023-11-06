@@ -1,2 +1,8 @@
-Git ini ==> Crea un repositorio de codigo local
-Git add <file> ==> Añade ese archivo al control de versiones
+Git init ==> Crea un repositorio de codigo local
+Git add <file> | . ==> Añade ese archivo al control de versiones (. añade todo los del directorio | * añade todos)
+Git commit -m <mensaje> ==> Subo un cambio con un mensaje
+Git status ==> me muestra el estado en el que esta el repositorio
+Git log ==> Muestra los commits realizados y su mensaje asociado (Persona, email, fecha)
+Git diff ==> Muestra las diferencias del archivo
+Git log --oneline ==> Lo muestra todo en la misma linea
+Git log <codigo commit> ==> Muestra mas detalles del commit
