@@ -20,6 +20,8 @@ git branch -d <nombre-rama> ==> Elimina la rama
 git checkout <nombre-rama> ==> cambiar a la rama <nombre-rama>
 git merge <nombre-rama> ==> Une la rama, con la rama actual
 git checkout -b <nombre-rama> ==> crea la rama <nombre-rama> y nos mueve a ella
+git remote add origin ==> Crea el repositorio online
+git push <repositorio> <rama> ==>Envia los cambios
 
 
 
