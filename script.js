@@ -6,5 +6,5 @@ function CopyMe(TextToCopy) {
     
     document.execCommand("copy");
     document.body.removeChild(TempText);
-    
+    alert("Se ha copiado el id de Discord");
   }
