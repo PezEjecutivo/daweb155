@@ -1,0 +1,19 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+main {
+  flex: 1 0 auto;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+button{
+    margin: 0.2rem;
+    width: 10rem;
+}
