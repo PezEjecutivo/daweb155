@@ -1,57 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Practica GIT</title>
+  </head>
+  <body>
+    <div class="card-panel blue lighten-1 center-align" >
+      <h1>Hola mundo</h1>
+    </div>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <title>Practica GIT</title>
-</head>
+    <div class="card-panel blue lighten-1">
+      <p class="texto">
+        Poco mas ya no se que escribir Poco mas ya no se que escribir Poco mas ya no se que escribir Poco mas ya no se
+        que escribir Poco mas ya no se que escribir Poco mas ya no se que escribir Poco mas ya no se que escribir
+      </p>
+    </div>
 
-<body>
-
-  <div class="card-panel blue lighten-1 center-align" >
-    <h1>Hola mundo</h1>
-  </div>
-  
-
-  <div class="card-panel blue lighten-1">
-    <p class="texto">
-      Poco mas ya no se que escribir Poco mas ya no se que escribir Poco mas ya no se que escribir Poco mas ya no se
-      que escribir Poco mas ya no se que escribir Poco mas ya no se que escribir Poco mas ya no se que escribir
-    </p>
-  </div>
-
-
-
-  <footer class="page-footer blue darken-1">
     <div class="container">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Conoce mas sobre mi!</h5>
-          <p class="grey-text text-lighten-4">Aqui te dejo algunos enlaces que te pueden ayudar a conocerme a mi y a mi trabajo.</p>
-          <img src="./EjecutivoAzul.png" alt="">
-        </div>
-        <div class="col l4 offset-l2 s12">
-          <h5 class="white-text" style="margin-left: 3rem;">Links</h5>
-          <ul>
-            <li><button class="grey-text text-lighten-3 waves-effect waves-light btn-small blue darken-2" onclick="location.href='https://github.com/PezEjecutivo';">GitHub</button></li>
-            <li><button class="grey-text text-lighten-3 waves-effect waves-light btn-small blue darken-2" onclick="location.href='https://twitter.com/EjecutivoPez';">Twitter / X</button></li>
-            <li><button class="grey-text text-lighten-3 waves-effect waves-light btn-small blue darken-2" onclick="location.href='https://www.youtube.com/channel/UCM6ppmwnTeFUna02zynPJqQ';">Youtube</button></li>
-            <li><button class="grey-text text-lighten-3 waves-effect waves-light btn-small blue darken-2" onclick="CopyMe('pezejecutivo')">Discord</button></li>
-          </ul>
-        </div>
+        <form class="col s12" action="" method="POST">
+          <div class="row">
+            <div class="input-field col s12">
+              <label for="">Inciar Sesion</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s7">
+              <input placeholder="Placeholder" id="first_name" type="text" class="validate">
+              <label for="first_name">Nombre de Usuario</label>
+            </div>
+              <div class="input-field col s7">
+                <input id="password" type="password" class="validate">
+                <label for="password">Contraseña</label>
+              </div>
+              
+          </div>
+          <input type="submit" class="waves-effect waves-light btn" value="Iniciar sesion">
+        </form>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-        © 2023 Pablo Valladares Gonzalez. Todos los derechos reservados.
-      </div>
-    </div>
-  </footer>
-  <script src="script.js"></script>
-</body>
 
+    <footer class="page-footer blue darken-1">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Conoce mas sobre mi!</h5>
+            <p class="grey-text text-lighten-4">Aqui te dejo algunos enlaces que te pueden ayudar a conocerme a mi y a mi trabajo.</p>
+            <img src="./EjecutivoAzul.png" alt="">
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text" style="margin-left: 3rem;">Links</h5>
+            <ul>
+              <li><button class="grey-text text-lighten-3 waves-effect waves-light btn-small blue darken-2" onclick="location.href='https://github.com/PezEjecutivo';">GitHub</button></li>
+              <li><button class="grey-text text-lighten-3 waves-effect waves-light btn-small blue darken-2" onclick="location.href='https://twitter.com/EjecutivoPez';">Twitter / X</button></li>
+              <li><button class="grey-text text-lighten-3 waves-effect waves-light btn-small blue darken-2" onclick="location.href='https://www.youtube.com/channel/UCM6ppmwnTeFUna02zynPJqQ';">Youtube</button></li>
+              <li><button class="grey-text text-lighten-3 waves-effect waves-light btn-small blue darken-2" onclick="CopyMe('pezejecutivo')">Discord</button></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          © 2023 Pablo Valladares Gonzalez. Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
