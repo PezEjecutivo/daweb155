@@ -1,0 +1,44 @@
+1.-Creamos un repositorio y creamos un readme.md
+
+#Este es mi archivo readme
+
+Este archivo se escribe en formato markdown.
+
+# == Titulo grande, cuantos mas # mas chiquitin
+
+## Propósito del proyecto
+Este es un proyecto didactico en el que vamos a crear una API REST.
+
+
+Como inicializar un modulo en node
+
+Una API REST la podéis hacer con:
+    - Python
+    - Java con Spring Boot
+    - Nodejs + Express
+
+Como se inicializaba proyecto con npm:
+    - npm init == Inicia el proyecto y nosotros configuramos/aceptamos las cosas
+    - npm init -y == Inicia el proycto y le da si a todo
+
+Como se añade una libreria:
+    - npm install <libreria> == Añade la libreria
+
+Recordad .gitignore para no subir node_modules
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
