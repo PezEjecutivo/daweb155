@@ -1,0 +1,41 @@
+Para abrir MongoDB en nuestra powershell usaremos el comando "mongosh"
+
+Ver bases de datos ==> show databases / show dbs
+Ver bases de datos en la que estamos actualemnte ==> db
+Borrar tabla ==> db.<nombre base de datos>.drop()
+Crear base de datos ==> use <nombre d la base de datos>
+Insertar valor a las tablas ==> db.<nombre tabla>.insertOne({ <JSON> })
+Insertar mas de un valor a la tabla ==> db.<nombre tabla>.insertMany([{ objeto 1 }, {objeto 2 }])
+Ver las tablas de nuestra base de datos ==> show collections / show tables
+Mostrar objetos de una tabla ==> db.<nombre tabla>.find()
+Mostrar objetos de una tabla de forma bonita (cambia la indentacion) ==> db.<nombre tabla>.find().pretty()
+
+Hacer una query/filtrar por un solo parametro ==> db.<nombre tabla>.find({ "atributo": "valor"}) 
+                                                  db.inventory.find({ "status": "A"}) (estamos buscando por el atributo "status" que tenga el valor "A")
+
+
+Hacer una query/filtrar por un solo un parametro con mas de un valor ==> db.<nombre tabla>.find( { "atributo": { $in: [ "valor 1", "valor 2" ] } } )
+                                                                         db.inventory.find( { status: { $in: [ "A", "D" ] } } ) $in significa que se encuentra en ese array de valores
+
+Hacere una query/filtrar por  mas de un parametro ==> db.<nombre tabla>.find({"atributo 1": "valor 1", "atributo 2": "valor 2"})
+                                                      db.inventory.find({"status": "A", "qty": 95})
+
+Mostrar objetos de una tabla donde un valor sea menor a X ==> db.<nombre tabla>.find( { "atributo": "valor", "atributo": { $lt: "valor que tiene que ser menor" } } )
+                                                              db.inventory.find( { status: "A", qty: { $lt: 30 } } )
+
+Mostrar objetos de una tabla por mas de un parametro sin necesidad de tener ambos ==> db.<nombre tabla>.find({$or: [{"atributo 1": "valor 1"}, {"atributo 2":"valor 2"}]})
+                                                                                      db.inventory.find({$or: [{status: "A"}, {qty:45}]})
+
+
+Actualizar un elemento de una tabla ==> db.<nombre tabla>.updateOne({"elemento"}, {$set: {"actualizacion"}})
+                                        db.inventory.updateOne({item: "paper"}, {$set: {status: "T"}}) Actualizamos el elemento "paper", cambiando su status a "T"
+
+Actualizar mas de un elemento de una tabla ==> db.<nombre>
+                                               db.inventory.updateMany({qty: {$lt: 50}}, {$set: {status: "T"}})
+
+Borrar un elemnto ==> db.<nombre tabla>.deleteOne({"atributo": "valor"})
+                      db.inventory.deleteOne({"item": "paper"}) Borra solo un elemento, cuando encuentre uno para
+
+Borrar mas de un elemento ==> db.<nombre tabla>.deleteMany({"atributo": "valor"})
+                              db.inventory.deleteMany({"status": "A"}) Borra todos los elementos, no para despues de encontrar 1
+
